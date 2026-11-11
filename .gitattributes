@@ -13,3 +13,4 @@ core/generated/** -text -diff
 *.sav -text
 *.rbf_r -text
 *.elf -text
+*.pdf binary

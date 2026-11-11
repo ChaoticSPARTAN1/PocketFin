@@ -1,12 +1,15 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/pocketfin-logo-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="docs/images/pocketfin-logo.png">
-    <img src="docs/images/pocketfin-logo.png" alt="PocketFin" width="560">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/pocketfin-banner-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/pocketfin-banner-light.png">
+    <img src="docs/images/readme/pocketfin-banner-dark.png" alt="PocketFin: Jellyfin on your Analogue Pocket" width="100%">
   </picture>
 </p>
 
 # PocketFin: Jellyfin on your Analogue Pocket
+
+**Read the guide:** [docs/PocketFin-Guide.pdf](docs/PocketFin-Guide.pdf) (opens right on GitHub), or download and
+double-click `Open-Documentation.html` for the interactive version.
 
 <p align="center"><img src="docs/images/pocket-core-launch.png" alt="The Jellyfin core's launch screen on the Analogue Pocket" width="480"><br>
 <sub>The core's launch screen, redrawn from the core's own files. Jellyfin logo (c) the Jellyfin contributors, CC BY-SA 4.0.</sub></p>
@@ -37,6 +40,12 @@ on the card and they show up in the **On this Pocket** tile on the Home screen.
 Limits: up to 256 videos, 12 pack files of 2 GiB each (about 24 hours in total). Only add videos you
 own or have the right to copy. Details and troubleshooting: [Offline library](docs/Offline-Library.md).
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## What it does
 
 - **Jellyfin-style screens**: Home rows (Continue Watching, Next Up, Latest), My Media, details pages,
@@ -53,6 +62,12 @@ own or have the right to copy. Details and troubleshooting: [Offline library](do
 
 Screenshots come from the project's own screen renderer with made-up sample titles.
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## Quick start
 
 1. Download this repository and unzip it.
@@ -63,6 +78,12 @@ Screenshots come from the project's own screen renderer with made-up sample titl
 3. On the Pocket: **Openfpga** (or the core list) > **Jellyfin** > **Run**. Press **A** and play the
    built-in **Test Pattern** to check picture and sound.
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## Documentation
 
 The [docs](docs/Home.md) cover everything in plain steps: [What you need](docs/What-You-Need.md),
@@ -71,6 +92,14 @@ The [docs](docs/Home.md) cover everything in plain steps: [What you need](docs/W
 [Troubleshooting and recovery](docs/Troubleshooting.md), [FAQ](docs/FAQ.md),
 [Building from source](docs/Building-from-Source.md), [AI prompt examples](docs/AI-Prompt-Examples.md),
 [Credits and licences](docs/Credits-and-Licences.md).
+
+**As one PDF:** [docs/PocketFin-Guide.pdf](docs/PocketFin-Guide.pdf) holds every page, with a clickable table of
+contents; GitHub shows it right in the browser.
+
+**Offline:** download or clone this repository, then double-click **`Open-Documentation.html`** in its
+main folder. It opens all of these pages in your browser, with pictures, without a server or an internet
+connection (keep it in the repository folder: it loads the pictures from `docs/`). It is built from the
+Markdown pages by `tools/build_docs_html.py` (the PDF by `tools/build_docs_pdf.py`).
 
 ### Optional: Remote Pilot for the Chromatic side
 
@@ -83,12 +112,24 @@ on screen, which helps when you make a bug report, and an AI assistant such as C
 it to help you test. It is optional: you do not need it to play videos from the SD card.
 More: [Connecting to Jellyfin wirelessly](docs/Wireless-Jellyfin.md#optional-remote-pilot).
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## Related projects
 
 - [Jellymatic](https://github.com/ChaoticSPARTAN1/Jellymatic): Jellyfin on the ModRetro Chromatic, and
   the Chromatic side of the link-cable connection.
 - [RemotePilot](https://github.com/ChaoticSPARTAN1/RemotePilot): see and control a Chromatic
   from your PC (screen, buttons, logs) over USB or Wi-Fi.
+
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
 
 ## Status
 
@@ -99,6 +140,12 @@ changes only the About screen's text and the source of the font atlas, which is 
 from Google's Roboto font (same glyph sizes and spacing; only tiny anti-aliasing differences). Live streaming through a Chromatic works but is
 limited by the link cable: pictures are small and soft, and playback may pause briefly to refill. See the [FAQ](docs/FAQ.md).
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## Disclaimer
 
 PocketFin is an independent project, not affiliated with, endorsed by or supported by Analogue or the
@@ -107,10 +154,22 @@ Jellyfin is a trademark of its owners; the Jellyfin logo is used under CC BY-SA 
 Chromatic are trademarks of ModRetro, Inc.; PocketFin is not affiliated with ModRetro either.
 Use it at your own risk. It is provided as is, without warranty, and support is not guaranteed.
 
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
+
 ## Contributing
 
 Bug reports, fixes and pull requests are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Report
 security problems privately: see [SECURITY.md](SECURITY.md).
+
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
 
 ## Licence
 
@@ -123,6 +182,12 @@ additional permission under GPL section 7 ([ADDITIONAL-TERMS.md](ADDITIONAL-TERM
   Intel/Altera FPGA IP; its Corresponding Source need not include the source of those parts.
 
 Third-party parts keep their own licences ([THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)).
+
+<p><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/divider-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/divider-light.png">
+  <img src="docs/images/readme/divider-dark.png" width="100%" alt="">
+</picture></p>
 
 ## Credits
 

@@ -1,10 +1,18 @@
 # PocketFin wiki
 
-<img src="images/pocketfin-logo.png" alt="PocketFin" width="420">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/pocketfin-logo-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/pocketfin-logo.png">
+  <img src="images/pocketfin-logo-dark.png" alt="PocketFin" width="420">
+</picture>
 
 PocketFin puts a Jellyfin-style media library on the Analogue Pocket. It runs as an openFPGA core
 called **Jellyfin**. You can watch videos stored on the SD card with nothing else, or browse and
 stream your Jellyfin server through a ModRetro Chromatic and a link cable.
+
+**Read it as one PDF:** [PocketFin-Guide.pdf](PocketFin-Guide.pdf) (opens right on GitHub). **Or offline:**
+download or clone the repository, then double-click `Open-Documentation.html` in its main folder. Every
+page here opens in your browser, with pictures, with no internet connection needed.
 
 <img src="images/pocket-core-launch.png" alt="The Jellyfin core's launch screen" width="400">
 

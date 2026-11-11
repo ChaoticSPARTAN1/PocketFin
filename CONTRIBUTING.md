@@ -30,6 +30,10 @@ Security problems: see [SECURITY.md](SECURITY.md), not a public issue.
 6. Keep the "ChaoticSPARTAN1" attribution (see [ADDITIONAL-TERMS.md](ADDITIONAL-TERMS.md)).
 7. New source files start with `SPDX-License-Identifier: GPL-3.0-or-later` and the line
    `Additional terms and permissions: ADDITIONAL-TERMS.md`, like the existing ones.
+8. After editing any documentation page, run `py -3 tools\build_docs_html.py` (Open-Documentation.html
+   and docs/index.html) and `py -3 tools\build_docs_pdf.py` (the PDF guide); `tools\test_docs_html.py`
+   checks all three. When the repository is public, GitHub Pages can serve the docs: Settings > Pages,
+   branch `main`, folder `/docs`; the site is `https://chaoticspartan1.github.io/PocketFin/`.
 
 By contributing you agree that your contribution is accepted under the same licence
 (GPL-3.0-or-later), with the same additional terms and the same additional permission as the rest of

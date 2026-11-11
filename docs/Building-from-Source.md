@@ -9,6 +9,7 @@
 - [3. Build the FPGA core](#3-build-the-fpga-core)
 - [4. Make the release](#4-make-the-release)
 - [5. Run the tests](#5-run-the-tests)
+- [Offline documentation page](#offline-documentation-page)
 
 You do not need any of this to use PocketFin: `release/` is ready to copy. These steps rebuild every
 file in it from source.
@@ -123,5 +124,37 @@ py -3 tools\test_rtl.py                 # link byte engine, FIFOs, JPEG decoder 
 
 `test_sd_library.py` needs `build\sample-library` (step 4). `test_pocket_save_exit.py` and
 `test_rtl.py` need `build\pocket-media-core` (step 3, prepare only).
+
+## Offline documentation page
+
+`Open-Documentation.html` in the main folder holds every documentation page in one file that opens by
+double-click, with no server and no internet connection. **After editing any `.md` page, rebuild it:**
+
+```powershell
+py -3 tools\build_docs_html.py          # rewrites Open-Documentation.html
+py -3 tools\test_docs_html.py           # fails if it is out of date or would load anything from the internet
+```
+
+It needs only Python (no packages). It converts README, `docs\*.md`, CONTRIBUTING, SECURITY,
+THIRD-PARTY-NOTICES and ADDITIONAL-TERMS (only files tracked by Git) and stores them inside the page;
+pictures load from `docs\images\`. A new page in `docs\` appears under **More** until you add it to a
+group in `GROUPS` at the top of the script. The README's banner and dividers are pictures in
+`docs\images\readme\` (dark and light versions), because GitHub does not show page styles. The same run
+writes `docs\index.html`, a copy for GitHub Pages (see below).
+
+**The PDF guide** (`docs\PocketFin-Guide.pdf`, shown by GitHub in the browser) is printed from the same
+pages by Chrome or Edge, offline:
+
+```powershell
+py -3 tools\build_docs_pdf.py           # rewrites docs\PocketFin-Guide.pdf and docs\.guide-source.sha256
+```
+
+The test above says when the PDF is out of date (it compares `docs\.guide-source.sha256` with the pages
+and build scripts; it does not print again). Set `DOCS_BROWSER` if Chrome or Edge is not found.
+
+**For maintainers, when the repository is public:** GitHub can host the documentation for free. In the
+repository's Settings > Pages, choose Deploy from a branch, branch `main`, folder `/docs`. The site is then
+`https://chaoticspartan1.github.io/PocketFin/` (it serves `docs\index.html`; `docs\.nojekyll` makes GitHub
+serve the files as they are). Add a link to it in the README only once it works.
 
 Next: [AI prompt examples](AI-Prompt-Examples.md)
