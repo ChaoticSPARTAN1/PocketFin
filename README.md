@@ -8,8 +8,9 @@
 
 # PocketFin: Jellyfin on your Analogue Pocket
 
-**Read the guide:** [docs/PocketFin-Guide.pdf](docs/PocketFin-Guide.pdf) (opens right on GitHub), or download and
-double-click `Open-Documentation.html` for the interactive version.
+**Read the guide online:** [chaoticspartan1.github.io/PocketFin](https://chaoticspartan1.github.io/PocketFin/), as a PDF:
+[docs/PocketFin-Guide.pdf](docs/PocketFin-Guide.pdf) (opens right on GitHub), or offline: download and double-click
+`Open-Documentation.html`.
 
 <p align="center"><img src="docs/images/pocket-core-launch.png" alt="The Jellyfin core's launch screen on the Analogue Pocket" width="480"><br>
 <sub>The core's launch screen, redrawn from the core's own files. Jellyfin logo (c) the Jellyfin contributors, CC BY-SA 4.0.</sub></p>
