@@ -2,6 +2,7 @@
 
 [Home](Home.md) > Install
 
+- [Download the release](#download-the-release)
 - [What is in release/](#what-is-in-release)
 - [Install by copying files](#install-by-copying-files)
 - [Install with the Windows script](#install-with-the-windows-script)
@@ -9,6 +10,18 @@
 - [Remove PocketFin](#remove-pocketfin)
 
 PocketFin adds its own folders to the card. It does not change other cores, games, saves or settings.
+
+## Download the release
+
+1. Open the [Releases page](https://github.com/ChaoticSPARTAN1/PocketFin/releases/latest) (the latest
+   PocketFin release).
+2. Download **`PocketFin-SD-<version>.zip`** and unzip it anywhere on your computer.
+3. Inside are the folders `SD/`, `SD-sample-library/` and `SD-first-install-saves/`, a `README.txt` and
+   `SHA256SUMS.txt`. They are the same files as `release/` in this repository, so the steps below work
+   with either: where they say `release/SD/`, use the unzipped `SD/` folder, and so on.
+
+To use the Windows script with the download, unzip it into a folder named `release` next to
+`Install-PocketFin.ps1` (in a downloaded copy of this repository), replacing the files there.
 
 ## What is in release/
 
@@ -57,7 +70,9 @@ If Windows refuses to run the script, run this once in the same window first:
 
 ## Update to a new version
 
-Copy only `release/SD/` (or run the script again). Your library, your saves and the list of library
+Download the new `PocketFin-SD-<version>.zip` from the
+[Releases page](https://github.com/ChaoticSPARTAN1/PocketFin/releases/latest), then copy only its `SD/`
+folder (or run the script again). Your library, your saves and the list of library
 files stay as they are. Do not copy `SD-sample-library` over your own library unless you want the
 demo back.
 

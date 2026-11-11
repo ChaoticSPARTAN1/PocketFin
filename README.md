@@ -70,11 +70,14 @@ Screenshots come from the project's own screen renderer with made-up sample titl
 
 ## Quick start
 
-1. Download this repository and unzip it.
-2. Copy the contents of `release\SD\` onto the root of your Pocket's SD card. Then, **first install
-   only (skip if the card already has them)**, also copy `release\SD-sample-library\` and
-   `release\SD-first-install-saves\`. Or, on Windows, run `.\Install-PocketFin.ps1 -Card E:\` (use
-   your card's drive letter). [Full steps](docs/Install.md).
+1. Download **`PocketFin-SD-<version>.zip`** from the
+   [Releases page](https://github.com/ChaoticSPARTAN1/PocketFin/releases/latest) and unzip it. (It holds
+   the same card files as `release\` in this repository.)
+2. Copy the contents of its `SD\` folder onto the root of your Pocket's SD card. Then, **first install
+   only (skip if the card already has them)**, also copy the contents of `SD-sample-library\` and
+   `SD-first-install-saves\` (never replace existing saves). Or, on Windows, download this repository
+   too and run `.\Install-PocketFin.ps1 -Card E:\` (use your card's drive letter): it uses the same files
+   from `release\`. [Full steps](docs/Install.md).
 3. On the Pocket: **Openfpga** (or the core list) > **Jellyfin** > **Run**. Press **A** and play the
    built-in **Test Pattern** to check picture and sound.
 

@@ -12,6 +12,9 @@
 - Its **SD card**, and a way to copy files to it: a card reader on your computer, or the Pocket's own
   USB card access if your firmware offers it.
 - About **5 MB** free for the core and demo, plus room for your videos (about 0.9 GB per hour).
+- The PocketFin card files: **`PocketFin-SD-<version>.zip`** from the
+  [Releases page](https://github.com/ChaoticSPARTAN1/PocketFin/releases/latest) (the same files as
+  `release/` in this repository; see [Install](Install.md)).
 
 That is all. No network, no Chromatic, no server.
 
