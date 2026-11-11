@@ -1,0 +1,296 @@
+{
+  "data": {
+    "magic": "APF_VER_1",
+    "data_slots": [
+      {
+        "id": 0,
+        "name": "Media library",
+        "required": true,
+        "parameters": 275,
+        "extensions": [
+          "json"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Runtime 1",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "bin"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 2,
+        "name": "Runtime 2",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "ini"
+        ],
+        "deferload": false
+      },
+      {
+        "id": 3,
+        "name": "Runtime 3",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "elf"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 4,
+        "name": "Runtime 4",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjl"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 10,
+        "name": "Diagnostics log",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20100000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Offline cache 0",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20140000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Offline cache 1",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20180000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Offline cache 2",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x201C0000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Offline cache 3",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20200000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Offline cache 4",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20240000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Offline cache 5",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20280000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Offline cache 6",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x202C0000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Offline cache 7",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20300000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Offline cache 8",
+        "required": false,
+        "parameters": "0x84",
+        "nonvolatile": true,
+        "address": "0x20340000",
+        "size_maximum": "0x40000",
+        "extensions": [
+          "sav"
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Pack 1",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 21,
+        "name": "Pack 2",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 22,
+        "name": "Pack 3",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 23,
+        "name": "Pack 4",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 24,
+        "name": "Pack 5",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 25,
+        "name": "Pack 6",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 26,
+        "name": "Pack 7",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 27,
+        "name": "Pack 8",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 28,
+        "name": "Pack 9",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 29,
+        "name": "Pack 10",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 30,
+        "name": "Pack 11",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      },
+      {
+        "id": 31,
+        "name": "Pack 12",
+        "required": false,
+        "parameters": 0,
+        "extensions": [
+          "pjs"
+        ],
+        "deferload": true
+      }
+    ]
+  }
+}

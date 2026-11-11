@@ -1,0 +1,15 @@
+# Source text is stored with LF line ends.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+# The SD card release is stored byte for byte (the Pocket was tested with these exact files).
+release/** -text -diff
+core/generated/** -text -diff
+*.png -text
+*.bin -text
+*.a8 -text
+*.pjs -text
+*.pjl -text
+*.sav -text
+*.rbf_r -text
+*.elf -text

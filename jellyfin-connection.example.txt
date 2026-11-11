@@ -1,0 +1,7 @@
+# Copy this file to private\jellyfin-connection.txt and fill it in on your own PC.
+# Only tools/make_offline_library.py --jellyfin reads it. Never share or commit the filled-in copy.
+# Values are literal text after '='. Do not quote them or add comments on the same line.
+server_url=http://your-server:8096
+username=YOUR_USERNAME
+password=YOUR_PASSWORD
+# Or remove username/password and set access_token=YOUR_TOKEN (a key you create for this tool).

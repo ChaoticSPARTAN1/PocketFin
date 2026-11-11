@@ -1,0 +1,6 @@
+PocketFin 1.0.0. Created by ChaoticSPARTAN1.
+Source code for everything in this core, and how to rebuild it: https://github.com/ChaoticSPARTAN1/PocketFin
+Licence: GPL-3.0-or-later (PocketFin-LICENSE-GPL-3.0.txt) with the additional terms and permission in
+PocketFin-ADDITIONAL-TERMS.md. Third-party parts: THIRD-PARTY-NOTICES.md and the other files here.
+Exact upstream revisions: upstream.lock.json in that repository.
+Not affiliated with, endorsed by or supported by Analogue or the Jellyfin project.

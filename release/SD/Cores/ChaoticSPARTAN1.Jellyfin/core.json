@@ -1,0 +1,37 @@
+{
+  "core": {
+    "magic": "APF_VER_1",
+    "metadata": {
+      "platform_ids": [
+        "pocketlive"
+      ],
+      "shortname": "Jellyfin",
+      "description": "Jellyfin library and film playback. Created by ChaoticSPARTAN1",
+      "author": "ChaoticSPARTAN1",
+      "url": "https://github.com/ChaoticSPARTAN1/PocketFin",
+      "version": "1.0.0",
+      "date_release": "2026-11-10"
+    },
+    "framework": {
+      "target_product": "Analogue Pocket",
+      "version_required": "2.2",
+      "sleep_supported": false,
+      "dock": {
+        "supported": true,
+        "analog_output": false
+      },
+      "hardware": {
+        "link_port": true,
+        "cartridge_adapter": 0
+      },
+      "chip32_vm": "loader.bin"
+    },
+    "cores": [
+      {
+        "name": "os25",
+        "id": 0,
+        "filename": "os25.rbf_r"
+      }
+    ]
+  }
+}

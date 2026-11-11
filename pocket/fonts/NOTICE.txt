@@ -1,0 +1,17 @@
+Roboto Medium glyph atlas (PocketFin)
+
+The app's font atlas, roboto-medium-18.a8 and roboto-medium-18.json, is generated from
+Roboto-Medium.ttf, Roboto version 2.138, Copyright 2011 Google Inc. All Rights Reserved.
+Roboto is licensed under the Apache License, Version 2.0 (Apache-2.0.txt: in LICENSES/ in the
+source repository, in Notices/PocketLive/ on the SD card).
+
+Font source: https://github.com/googlefonts/roboto-2 (release v2.138, roboto-unhinted.zip). The
+exact download and file hashes are pinned in upstream.lock.json ("download" > "roboto") in the
+PocketFin source repository, https://github.com/ChaoticSPARTAN1/PocketFin (file paths below are in
+that repository).
+
+Changes from the original font file: tools/build_roboto_atlas.py rasterizes the 95 printable ASCII
+glyphs at 18 px into 8-bit coverage cells, drawn 1.125 times wider than tall, with the baseline,
+x-height and cap height placed on whole pixels. tools/build_ui_font.py then scales the atlas into
+pocket/ui_font.h and pocket/ui_font_large.h, which are compiled into the app (pjlive.elf). These
+generated files remain under the Apache License, Version 2.0.

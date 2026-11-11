@@ -1,0 +1,77 @@
+{
+  "about": "Exact upstream revisions PocketFin builds against. tools/fetch_upstreams.py fetches the 'fetch' entries into upstream/ (Git-ignored); the 'download' entries are single release files fetched by tools/fetch_upstreams.py --font and checked by SHA-256; the 'vendored' entries are small files copied into this repository with their licences.",
+  "fetch": {
+    "openfpgaSDK": {
+      "repository": "https://github.com/openfpgaOS/openfpgaSDK.git",
+      "commit": "a408ddc12aed0dfaa4aa22c06af82f829db77126",
+      "license": "Apache-2.0 (musl libc: MIT; see the SDK's NOTICE and REUSE.toml)",
+      "used_for": "app headers, startup code, linker script, musl libc; core metadata templates; Chip32 loader"
+    },
+    "openfpgaCore": {
+      "repository": "https://github.com/openfpgaOS/openfpgaCore.git",
+      "commit": "618a3eb985759a4154115109c2c8036271252888",
+      "license": "Apache-2.0 for the project's own files; Analogue Pocket Framework files under Analogue's APF licence; Intel megafunction files under Intel's licence; see its NOTICE",
+      "used_for": "the FPGA runtime the PocketFin core is built from (tools/prepare_pocket_media_core.py patches a copy) and the paired OS kernel"
+    },
+    "VexiiRiscv": {
+      "repository": "https://github.com/openfpgaOS/VexiiRiscv.git",
+      "commit": "580b76c3868512c8316bb7a3d3add81cad49a0dc",
+      "license": "MIT",
+      "used_for": "only to regenerate core/generated/VexiiRiscv_media.v (optional)",
+      "submodules": {
+        "ext/SpinalHDL": {"repository": "https://github.com/SpinalHDL/SpinalHDL.git",
+                          "commit": "6f8510cdbb8ad7b8bcc0f6d58395669c4c4d7e2d",
+                          "license": "LGPL-3.0 (core) / MIT (lib); generated RTL belongs to the user"},
+        "ext/rvls": {"repository": "https://github.com/SpinalHDL/rvls.git",
+                     "commit": "94f850e5f7c9a36e5aceb3810d658fffae55b497",
+                     "license": "see its repository"}
+      }
+    },
+    "core_jpeg": {
+      "repository": "https://github.com/ultraembedded/core_jpeg.git",
+      "commit": "bb03cce45d0b7459d395486e9e1db3de1b416bd2",
+      "license": "Apache-2.0",
+      "used_for": "the hardware JPEG decoder (tools/prepare_pocket_media_core.py makes the small documented port)"
+    }
+  },
+  "download": {
+    "roboto": {
+      "repository": "https://github.com/googlefonts/roboto-2",
+      "tag": "v2.138",
+      "commit": "ab4876f650a4aeb9b661c83fee47f908c739bb70",
+      "url": "https://github.com/googlefonts/roboto-2/releases/download/v2.138/roboto-unhinted.zip",
+      "zip_sha256": "70f64c718510a601fbcf752aafe644314dacaeb85474dc689c89787c4a72a728",
+      "member": "Roboto-Medium.ttf",
+      "ttf_sha256": "b398bb9c791ddb08f1063d9c874f98e8aadb99132043b2d272a9276cf90c465a",
+      "license": "Apache-2.0 (Copyright 2011 Google Inc.)",
+      "to": "upstream/roboto/Roboto-Medium.ttf",
+      "used_for": "only to regenerate pocket/fonts/roboto-medium-18.a8 with tools/build_roboto_atlas.py (optional)"
+    }
+  },
+  "vendored": {    "jellyfin-ux": {
+      "repository": "https://github.com/jellyfin/jellyfin-ux",
+      "commit": "69a2b7b1237732a134dd501ff55b9404cf2d1601",
+      "license": "CC-BY-SA-4.0",
+      "files": ["icon-transparent.png", "banner-light.png (from the repository's branding artwork)", "LICENSE"],
+      "to": "third_party/jellyfin-ux-branding/",
+      "sha256": {
+        "icon-transparent.png": "f3a12b9fdf5b5dfcf38d2b1cb2eebfb2c55b33d3db8a5776420feb4aeb230ffc",
+        "banner-light.png": "ec1f8120bcad24956c1efa14acb2b8e031c6327717d413b188946314424b9e13",
+        "LICENSE": "6d4e2239c9605f95e1031309e8bd156dec62c55817427655003c57baceafb1e2"
+      }
+    }
+  },
+  "toolchain": {
+    "riscv_gcc": "riscv64-unknown-elf-gcc 15.1.0-2 and binutils 2.46.1-1 (MSYS2 UCRT64 packages)",
+    "packages": [
+      {"name": "mingw-w64-ucrt-x86_64-riscv64-unknown-elf-binutils-2.46.1-1-any.pkg.tar.zst",
+       "sha256": "6c13c4ef211e25a13b5af25b64b6e73f24e7cf2fb6392332c85afffe7afab6ab"},
+      {"name": "mingw-w64-ucrt-x86_64-riscv64-unknown-elf-gcc-15.1.0-2-any.pkg.tar.zst",
+       "sha256": "57ffaaef6f6ec592dc422d375b81ec14759cf4b6be1a8e5d1e56b4e8cf2dce38"}
+    ],
+    "quartus": "Intel Quartus Prime Lite 21.1.1 Build 850",
+    "iverilog": "Icarus Verilog 13 (MSYS2 package 1~13.0-2)",
+    "python": "Python 3.12 or newer; PyAV 19.0.2 for the offline library tools",
+    "ffmpeg": "FFmpeg 7 or newer on PATH"
+  }
+}

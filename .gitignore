@@ -1,0 +1,16 @@
+# Your own data: Jellyfin sign-in, Wi-Fi details, libraries. Never commit these.
+private/
+jellyfin-connection.txt
+# Fetched upstream sources, local toolchains and build output
+upstream/
+local-tools/
+build/
+__pycache__/
+*.pyc
+# Your own videos and converted libraries
+*.mp4
+*.mkv
+*.avi
+*.mov
+# Card files the installer replaced or removed
+backups/

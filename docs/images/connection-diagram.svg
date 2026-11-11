@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="360" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="3">
+    <rect x="40" y="70" width="170" height="110" rx="10"/>
+    <rect x="300" y="60" width="90" height="130" rx="10"/>
+    <rect x="316" y="74" width="58" height="46"/>
+    <rect x="560" y="60" width="90" height="130" rx="10"/>
+    <rect x="576" y="74" width="58" height="46"/>
+    <rect x="740" y="70" width="180" height="110" rx="10"/>
+  </g>
+  <g fill="#111111" font-size="20" text-anchor="middle">
+    <text x="125" y="120">Jellyfin</text>
+    <text x="125" y="146">server</text>
+    <text x="345" y="226">Chromatic</text>
+    <text x="345" y="250" font-size="15" fill="#666666">Jellymatic</text>
+    <text x="605" y="226">Pocket</text>
+    <text x="605" y="250" font-size="15" fill="#666666">PocketFin</text>
+    <text x="830" y="112">SD card</text>
+    <text x="830" y="140" font-size="15" fill="#666666">offline library</text>
+  </g>
+  <g stroke="#111111" stroke-width="2.5" fill="none">
+    <path d="M215 125 H295" stroke-dasharray="7 7"/>
+    <path d="M395 125 H555"/>
+    <path d="M655 125 H735"/>
+  </g>
+  <g fill="#666666" font-size="15" text-anchor="middle">
+    <text x="255" y="108">Wi-Fi</text>
+    <text x="475" y="108">link cable</text>
+    <text x="695" y="108">built in</text>
+  </g>
+  <g fill="#111111" font-size="16">
+    <text x="40" y="300">1  Live: server  &#8594;  Wi-Fi  &#8594;  Chromatic  &#8594;  link cable  &#8594;  Pocket</text>
+    <text x="40" y="330">2  Offline: PC tool copies your videos or server titles onto the SD card</text>
+  </g>
+</svg>

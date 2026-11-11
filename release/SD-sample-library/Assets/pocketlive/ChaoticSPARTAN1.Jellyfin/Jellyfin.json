@@ -1,0 +1,71 @@
+{
+  "instance": {
+    "magic": "APF_VER_1",
+    "variant_select": {
+      "id": 666,
+      "select": false
+    },
+    "data_slots": [
+      {
+        "id": 1,
+        "filename": "os.bin"
+      },
+      {
+        "id": 2,
+        "filename": "pjlive.ini"
+      },
+      {
+        "id": 3,
+        "filename": "pjlive.elf"
+      },
+      {
+        "id": 4,
+        "filename": "library.pjl"
+      },
+      {
+        "id": 10,
+        "filename": "pjlive_log.sav"
+      },
+      {
+        "id": 11,
+        "filename": "pjcache0.sav"
+      },
+      {
+        "id": 12,
+        "filename": "pjcache1.sav"
+      },
+      {
+        "id": 13,
+        "filename": "pjcache2.sav"
+      },
+      {
+        "id": 14,
+        "filename": "pjcache3.sav"
+      },
+      {
+        "id": 15,
+        "filename": "pjcache4.sav"
+      },
+      {
+        "id": 16,
+        "filename": "pjcache5.sav"
+      },
+      {
+        "id": 17,
+        "filename": "pjcache6.sav"
+      },
+      {
+        "id": 18,
+        "filename": "pjcache7.sav"
+      },
+      {
+        "id": 19,
+        "filename": "pjcache8.sav"
+      },
+      {
+        "id": 20,
+        "filename": "pack00.pjs"
+      }
+    ]
+  }
+}
