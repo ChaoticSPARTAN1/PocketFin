@@ -14,3 +14,4 @@ core/generated/** -text -diff
 *.rbf_r -text
 *.elf -text
 *.pdf binary
+*.mp4 binary

@@ -12,6 +12,8 @@ __pycache__/
 *.mkv
 *.avi
 *.mov
+# ...except the project's own trailers and sample videos
+!media/**/*.mp4
 # Card files the installer replaced or removed
 backups/
 # Temporary print page of the PDF guide (build_docs_pdf.py deletes it)
