@@ -49,6 +49,11 @@ use its USB port. The two supported ways are the Chromatic link and copying to t
 **Which Chromatic software do I need?** Jellymatic with its Pocket link option:
 https://github.com/ChaoticSPARTAN1/Jellymatic
 
+**Can the Pocket show the Chromatic's TV or ChromaTube rows?** No. Jellymatic's start-up menu 1.6 added
+TV (Local Weather and live channels) and ChromaTube on the Chromatic only; the Pocket link works as
+before, from the Chromatic's Jellyfin row. A ChromaTube library on your server may be listed on the
+Pocket like any library, but its videos are not supported there.
+
 ## Safety and legal
 
 **Can PocketFin damage my Pocket?** It runs only while the core is open and does not touch the Pocket's
