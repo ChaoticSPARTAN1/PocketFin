@@ -1,22 +1,23 @@
 # Media
 
-Trailers, short clips and pictures for PocketFin and Jellymatic. They are also handy sample videos for
-trying the [offline library](../docs/Offline-Library.md) on your Pocket.
+Trailers, short clips and pictures for PocketFin, Jellymatic and the Chromatic's TV and ChromaTube
+apps. They are also handy sample videos for trying the [offline library](../docs/Offline-Library.md) on your Pocket.
 
 | Folder | What is in it |
 |---|---|
 | `pocketfin/` | PocketFin trailer (1080x1080 and 1920x1080), three short clips, teaser pictures |
 | `jellymatic/` | Jellymatic trailer (1080x1080 and 1920x1080), four short clips, teaser pictures |
 | `howto/` | How to stream Jellyfin over Wi-Fi from a Chromatic to the Pocket with a link cable (42 s, both sizes), and a picture |
+| `apps/` | Promos for the start-up menu's TV row (Chromavision: Local Weather and Live TV) and ChromaTube, both sizes, and a still picture of each |
 
-All videos are MP4 (H.264, 30 fps, AAC sound).
+All videos are MP4 (H.264, 30 fps, AAC sound). Stream quality on the consoles may vary.
 
 ## Try them on the Pocket
 
 From the PocketFin folder, for example:
 
 ```powershell
-py -3 tools\make_offline_library.py --video media\pocketfin\pocketfin-trailer-1920x1080.mp4 --video media\howto\howto-wifi-pocket-1920x1080.mp4
+py -3 tools\make_offline_library.py --video media\pocketfin\pocketfin-trailer-1920x1080.mp4 --video media\howto\howto-wifi-pocket-1920x1080.mp4 --video media\apps\chromavision-1920x1080.mp4 --video media\apps\chromatube-1920x1080.mp4
 ```
 
 Then copy `build\offline-library\` to the SD card as described in
@@ -29,6 +30,8 @@ Then copy `build\offline-library\` to the SD card as described in
 - Footage on the screens: *Sintel* (c) copyright Blender Foundation | durian.blender.org, licensed
   [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) (picture only, scaled and cropped).
 - Jellyfin logo: CC BY-SA 4.0, Jellyfin contributors.
-- Music and sounds were generated for these videos.
+- Music and sounds were generated for these videos. The TV promo's announcer is Piper's
+  `en_US-norman-medium` voice (public domain); its weather pages show the sample location Orlando, FL.
 
-Unofficial fan project, not affiliated with Analogue, ModRetro or Jellyfin. Made by ChaoticSPARTAN1.
+Unofficial fan project, not affiliated with Analogue, ModRetro, Jellyfin, YouTube or Google. Made by
+ChaoticSPARTAN1.
